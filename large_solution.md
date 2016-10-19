@@ -66,6 +66,11 @@
 "authServerUrl": "http://VIP:80/", //VIP上个步骤创建负载均衡实例的VIP，端口填负载均衡监听器监听的端口(示例中是80)
 ```
 
+重启服务来生效配置
+- Node.js环境，进入`/data/release/node-weapp-demo`下执行`pm2 process.json`
+- .Net环境 需要重启 IIS 中的网站来生效配置
+- JAVA环境 重启tomcat执行命令`systemctl restart tomcat`
+
 ![负载均衡ip](https://mc.qcloudimg.com/static/img/9e5600b9e52677566c3139e86a40087f/14.png)
 
 到此我们已经完成了对`会话管理服务器`的横向扩容，接下我们进行`业务服务器`的扩容

@@ -62,3 +62,33 @@ module.exports = config;
 ## 4.升级方案
 如果现有的配置满足不了您的业务需求，我们提供了[单机版架构升级](https://github.com/CFETeam/weapp-doc/blob/master/medium_solution.md)、[集群版架构扩容](https://github.com/CFETeam/weapp-doc/blob/master/large_solution.md)来对现有资源进行配置升级、扩容。
 
+## 常见问题
+
+### 重装开发语言环境
+
+> 目前业务服务器提供了PHP、Node.js、Java、.Net版本的语言环境，用户如果要切换需要做以下操作:
+
+1) 备份配置文件
+
+将`sdk.config`从服务器拷贝到本地、`CentOS`系统在`/etc/qcloud`路径下，`Windows Server`系统在`c://qcloud`路径下
+
+2) 重装系统
+
+> 如果有重要数据请提前保存好
+
+首先需要登录[腾讯云CVM控制台](https://console.qcloud.com/cvm)，在会话管理CVM实例右侧操作栏，点击【更多】-【重装系统】。
+
+弹出框内镜像来源选`服务市场`，镜像选`基础环境`，下拉列表中找到四个语言的镜像来选中镜像，设置好系统密码后点`开始重装`
+
+![重选系统镜像](https://mc.qcloudimg.com/static/img/57da50a2f470d7186020b4e39f5ea15a/22.png)
+
+3) 上传配置文件
+
+系统重装好后将步骤1中保存下来的`sdk.config`上传至服务器上，`CentOS`系统在`/etc/qcloud`路径下，`Windows Server`系统在`c://qcloud`路径下
+
+4) 重启服务
+
+- Node.js环境，进入`/data/release/node-weapp-demo`下执行`pm2 process.json`
+- .Net环境 需要重启 IIS 中的网站来生效配置
+- JAVA环境 重启tomcat执行命令`systemctl restart tomcat`
+
