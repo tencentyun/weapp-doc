@@ -1,17 +1,15 @@
 # 小程序创建资源配置指引
 
-假如您已成功创建了小程序资源，现在需要对现有的资源进行一些简单配置后，才能让小程序跑起来
+假如您已成功创建了小程序资源，需要对现有的资源进行一些简单配置后，才能让小程序跑起来
 >未创建过资源的用户可以先在[小程序控制台](https://console.qcloud.com/la)进行创建
-
-接下来就跟着文档一步步来操作吧
 
 ## 1.配置微信小程序通信域名
 
-首先我们在[小程序资源视图](https://console.qcloud.com/la)中将免费二级域名拷贝下来
+首先我们在[小程序资源视图](https://console.qcloud.com/la)中将免费二级域名拷贝下来，在后面的几个流程中都会用到。
 
 ![小程序资源视图](https://mc.qcloudimg.com/static/img/95d83cc575c1aabc66cbdcaf63bc8619/18.png)
 
-然后前往[微信公众平台](https://mp.weixin.qq.com) -【选择设置】- 【开发者设置】选项卡，使用二级域名完成通信域名设置
+然后前往[微信公众平台](https://mp.weixin.qq.com) -【选择设置】- 【开发者设置】选项卡，使用二级域名完成通信域名设置，设置完后可能要等待几分钟生效
 
 ![微信域名配置](https://mc.qcloudimg.com/static/img/79cdbc773a6030b6055951d72e8735e3/16.png)
 
@@ -41,22 +39,7 @@ Windows Server系统修改`c://qcloud`下`sdk.config`文件
 
 1) 前往[github](https://github.com/CFETeam/weapp-client-demo)将 Demo 下载到本地
 
-2) 如果未安装`npm`可以先安装[Node.js](https://nodejs.org/en/)，会将`npm`打包一起安装好
-
-3) 使用`npm`安装包管理器`bower`，执行下面命令
-
-```
-npm install bower -g
-```
-
-4) 进入Demo根目录，使用`bower`下载依赖的 SDK，
->因为 npm 下载的`node_modules`目录在微信开发者中工具打包时会被忽略，所以这里 Demo 中使用`bower`来管理 SDK 模块
-
-```
-bower install
-```
-
-修改 Demo 根目录下的`config.js`配置文件
+2) 修改 Demo 根目录下的`config.js`配置文件
 
 ```
 var host = 'www.qcloud.la'; //host替换成微信小程序资源视图中分配的二级域名
@@ -77,5 +60,5 @@ module.exports = config;
 ![小程序Demo](https://mc.qcloudimg.com/static/img/05f7d737bc4dc74021aa5db49bf66aa0/17.png)
 
 ## 4.升级方案
-如果现有的配置满足不了您的业务需求，我们提供了[中型解决方案](https://github.com/CFETeam/weapp-doc/blob/master/medium_solution.md)、[大型解决方案](https://github.com/CFETeam/weapp-doc/blob/master/large_solution.md)对现有资源进行升级。
+如果现有的配置满足不了您的业务需求，我们提供了[单机版架构升级](https://github.com/CFETeam/weapp-doc/blob/master/medium_solution.md)、[集群版架构扩容](https://github.com/CFETeam/weapp-doc/blob/master/large_solution.md)来对现有资源进行配置升级、扩容。
 
