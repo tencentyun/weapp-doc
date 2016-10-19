@@ -22,9 +22,9 @@
 
 ## 2.修改业务服务器配置
 
->如果您购买的是`CetOS`系统云服务器，创建资源时已默认为您下发好配置到`/etc/qcloud/sdk.config`，可略过此步
+>如果您购买的是 `Centos` 系统云服务器，创建资源时已默认为您下发好配置到 `/etc/qcloud/sdk.config`，可略过此步
 
-Windows Server系统修改`c://qcloud`下`sdk.config`文件
+Windows Server 系统修改 `c:\qcloud\sdk.config`。
 
 ```
 {
@@ -34,6 +34,8 @@ Windows Server系统修改`c://qcloud`下`sdk.config`文件
     "tunnelSignatureKey": "62aaa14292b3a65a61c14b8c30437bc648e087b2" //填写一份随机字符
 }
 ```
+
+修改完成后，需要重启 IIS 中的网站以生效。
 
 ## 3.下载微信客户端demo和SDK
 
