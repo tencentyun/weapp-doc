@@ -23,6 +23,7 @@
 ## 2.修改业务服务器配置
 
 >如果开发语言环境是`CentOS`操作系统，创建资源时已默认下发好配置到`/etc/qcloud/sdk.config`，可略过此步
+
 >登录云服务器的密码请在[站内信](https://console.qcloud.com/message)、手机短信、邮箱中查看
 
 Windows Server系统修改`c://qcloud`下`sdk.config`文件
