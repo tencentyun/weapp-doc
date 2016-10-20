@@ -15,8 +15,8 @@
 
 - `request合法域名`：填腾讯云分配的二级域名
 - `socket合法域名`：填`ws.qcloud.com`
-- `uploadFile合法域名`：基于二级域名搭建上传服务填腾讯云分配的二级域名
-- `downloadFile合法域名`：基于二级域名搭建资源下载服务则填腾讯云分配的二级域名
+- `uploadFile合法域名`：填腾讯云分配的二级域名
+- `downloadFile合法域名`：填腾讯云分配的二级域名
 
 ## 2.修改业务服务器配置
 
@@ -27,7 +27,7 @@ Windows Server系统修改`c://qcloud`下`sdk.config`文件
 ```
 {
     "serverHost": "xxxx.qcloud.la", //资源视图给出的二级域名
-    "authServerUrl": "http://内网IP/mina_auth/", //会话管理服务器的内网IP
+    "authServerUrl": "http://内网IP/mina_auth/", //内网IP改成会话管理服务器的内网 IP
     "tunnelServerUrl": "https://ws.qcloud.com", //不用修改
     "tunnelSignatureKey": "62aaa14292b3a65a61c14b8c30437bc648e087b2" //填写一份随机字符
 }
@@ -76,7 +76,7 @@ module.exports = config;
 
 ### 重装开发语言环境
 
-> 目前业务服务器提供了PHP、Node.js、Java、.Net版本的语言环境，用户如果要切换需要做以下操作:
+> 目前业务服务器提供了PHP、Node.js、Java、.NET版本的语言环境，用户如果要切换需要做以下操作:
 
 1) 备份配置文件
 
@@ -98,9 +98,9 @@ module.exports = config;
 
 4) 重启服务
 
-- Node.js环境，进入`/data/release/node-weapp-demo`下执行`pm2 process.json`
-- .Net环境 需要重启 IIS 中的网站来生效配置
-- JAVA环境 重启tomcat执行命令`systemctl restart tomcat`
+- Node.js环境进入`/data/release/node-weapp-demo`下执行`pm2 process.json`
+- .NET环境需要重启 IIS 中的网站来生效配置
+- Java环境重启tomcat执行命令`systemctl restart tomcat`
 
 ### 创建资源时填的AppID和AppSecret在哪找到？
 
