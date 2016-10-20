@@ -42,7 +42,7 @@ Windows Server系统修改`c://qcloud`下`sdk.config`文件
 
 ## 3.下载微信小程序 Demo 和 SDK
 
-1) 前往[github](https://github.com/CFETeam/weapp-client-demo)将 Demo 下载到本地
+1) 前往[github](https://github.com/CFETeam/qcloud-weapp-client-demo)将 Demo 下载到本地
 
 2) 修改 Demo 根目录下的`config.js`配置文件
 
