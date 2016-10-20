@@ -64,6 +64,14 @@ module.exports = config;
 
 ## 常见问题
 
+### 微信 AppId 和 AppSecret 在购买时填写错误怎么办
+
+如果在购买解决方案时，把 AppId 和 AppSecret 填写错误。小程序用户在登录时，便会返回错误码40029，错误信息MA_WEIXIN_CODE_ERR。此时便需要手动修改 AppId 和 AppSecret
+
+修改步骤如下：
+1) 登录会话管理服务器，进入`/opt/lampp/htdocs/mina_auth/system/db/`目录，查看db.ini文件，文件中保存着CDB的ip、port、username、passwd以及 dbname 等信息。
+2) 拿到这些信息以后，登录CDB服务器，修改cAppinfo表中的AppId和secretKey即可。
+
 ### 重装开发语言环境
 
 > 目前业务服务器提供了PHP、Node.js、Java、.Net版本的语言环境，用户如果要切换需要做以下操作:
