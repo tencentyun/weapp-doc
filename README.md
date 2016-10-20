@@ -5,7 +5,7 @@
 
 ## 1.配置微信小程序通信域名
 
-首先我们在[小程序资源视图](https://console.qcloud.com/la)中将免费二级域名拷贝下来，在后面的几个流程中都会用到。
+首先我们在[小程序资源视图](https://console.qcloud.com/la)中将二级域名拷贝下来，在后面的几个流程中都会用到。
 
 ![小程序资源视图](https://mc.qcloudimg.com/static/img/95d83cc575c1aabc66cbdcaf63bc8619/18.png)
 
@@ -27,7 +27,7 @@ Windows Server系统修改`c://qcloud`下`sdk.config`文件
 ```
 {
     "serverHost": "xxxx.qcloud.la", //资源视图给出的二级域名
-    "authServerUrl": "http://内网IP/mina_auth/", //内网IP改成会话管理服务器的内网 IP
+    "authServerUrl": "http://内网IP/mina_auth/", //内网IP改成会话管理服务器的内网IP
     "tunnelServerUrl": "https://ws.qcloud.com", //不用修改
     "tunnelSignatureKey": "62aaa14292b3a65a61c14b8c30437bc648e087b2" //填写一份随机字符
 }
@@ -70,9 +70,9 @@ module.exports = config;
 
 修改步骤如下：
 
-1) 登录会话管理服务器，进入`/opt/lampp/htdocs/mina_auth/system/db/`目录，查看db.ini文件，文件中保存着CDB的ip、port、username、passwd以及 dbname 等信息。
+1) 登录会话管理服务器，进入`/opt/lampp/htdocs/mina_auth/system/db/`目录，查看`db.ini`文件，文件中保存着 云数据库 CDB 的ip、port、username、passwd以及 dbname 等信息。
 
-2) 拿到这些信息以后，登录CDB服务器，修改cAppinfo表中的AppId和secretKey即可。
+2) 拿到这些信息以后，登录云数据库 CDB，修改 cAppinfo 表中的 AppId 和 secretKey 即可。
 
 ### 重装开发语言环境
 
