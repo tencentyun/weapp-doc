@@ -74,7 +74,7 @@ module.exports = config;
 
 2) 重装系统
 
-> 如果有重要数据请提前保存好
+> 如有重要数据请提前保存好
 
 首先需要登录[腾讯云CVM控制台](https://console.qcloud.com/cvm)，在会话管理CVM实例右侧操作栏，点击【更多】-【重装系统】。
 
@@ -92,3 +92,6 @@ module.exports = config;
 - .Net环境 需要重启 IIS 中的网站来生效配置
 - JAVA环境 重启tomcat执行命令`systemctl restart tomcat`
 
+### 创建资源时填的AppID和AppSecret在哪找到？
+
+前往[微信公众平台](https://mp.weixin.qq.com) -【选择设置】- 【开发者设置】在`开发者ID`一栏中可以看到
