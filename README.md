@@ -20,7 +20,7 @@
 
 ## 2.修改业务服务器配置
 
->如果开发语言环境是`CetOS`操作系统，创建资源时已默认下发好配置到`/etc/qcloud/sdk.config`，可略过此步
+>如果开发语言环境是`CentOS`操作系统，创建资源时已默认下发好配置到`/etc/qcloud/sdk.config`，可略过此步
 
 Windows Server系统修改`c://qcloud`下`sdk.config`文件
 
@@ -98,7 +98,7 @@ module.exports = config;
 
 4) 重启服务
 
-- Node.js环境进入`/data/release/node-weapp-demo`下执行`pm2 process.json`
+- Node.js环境进入`/data/release/node-weapp-demo`下执行`pm2 start process.json`
 - .NET环境需要重启 IIS 中的网站来生效配置
 - Java环境重启tomcat执行命令`systemctl restart tomcat`
 
