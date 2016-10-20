@@ -3,6 +3,7 @@
 假如您已成功创建了小程序资源，需要对现有的资源进行一些简单配置后，才能让小程序跑起来
 >未创建过资源的用户可以先在[小程序控制台](https://console.qcloud.com/la)进行创建
 
+
 ## 1.配置微信小程序通信域名
 
 首先我们在[小程序资源视图](https://console.qcloud.com/la)中将二级域名拷贝下来，在后面的几个流程中都会用到。
@@ -18,9 +19,11 @@
 - `uploadFile合法域名`：填腾讯云分配的二级域名
 - `downloadFile合法域名`：填腾讯云分配的二级域名
 
+
 ## 2.修改业务服务器配置
 
 >如果开发语言环境是`CentOS`操作系统，创建资源时已默认下发好配置到`/etc/qcloud/sdk.config`，可略过此步
+>登录云服务器的密码请在[站内信](https://console.qcloud.com/message)、手机短信、邮箱中查看
 
 Windows Server系统修改`c://qcloud`下`sdk.config`文件
 
@@ -34,6 +37,7 @@ Windows Server系统修改`c://qcloud`下`sdk.config`文件
 ```
 
 修改完成后，需要重启 IIS 中的网站以生效。
+
 
 ## 3.下载微信小程序 Demo 和 SDK
 
@@ -59,8 +63,10 @@ module.exports = config;
 
 ![小程序Demo](https://mc.qcloudimg.com/static/img/05f7d737bc4dc74021aa5db49bf66aa0/17.png)
 
+
 ## 4.升级方案
 如果现有的配置满足不了您的业务需求，我们提供了[单机版架构升级](https://github.com/CFETeam/weapp-doc/blob/master/medium_solution.md)、[集群版架构扩容](https://github.com/CFETeam/weapp-doc/blob/master/large_solution.md)来对现有资源进行配置升级、扩容。
+
 
 ## 常见问题
 
