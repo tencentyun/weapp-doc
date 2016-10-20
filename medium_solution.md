@@ -1,6 +1,6 @@
 # 单机版架构升级
 
-![单机版架构图](https://mc.qcloudimg.com/static/img/822152039dca7161ad7217c1037066a8/19.png)
+![单机版架构图](https://mc.qcloudimg.com/static/img/7d40df0347cbfad83c16a011a435271c/24.png)
 
 如果您在使用小程序云资源过程中发现现有配置不能满足您的业务需求，您可以选择升级云服务器和云数据库的配置。
 

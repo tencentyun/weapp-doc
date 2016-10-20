@@ -1,4 +1,4 @@
-# 小程序创建资源配置指引
+# 小程序初始化配置指引
 
 假如您已成功创建了小程序资源，需要对现有的资源进行一些简单配置后，才能让小程序跑起来
 >未创建过资源的用户可以先在[小程序控制台](https://console.qcloud.com/la)进行创建
@@ -27,7 +27,7 @@ Windows Server系统修改`c://qcloud`下`sdk.config`文件
 ```
 {
     "serverHost": "xxxx.qcloud.la", //资源视图给出的二级域名
-    "authServerUrl": "http://内网IP:80/", //会话管理服务器的内网IP
+    "authServerUrl": "http://内网IP/mina_auth/", //会话管理服务器的内网IP
     "tunnelServerUrl": "https://ws.qcloud.com", //不用修改
     "tunnelSignatureKey": "62aaa14292b3a65a61c14b8c30437bc648e087b2" //填写一份随机字符
 }

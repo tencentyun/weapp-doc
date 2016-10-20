@@ -4,11 +4,11 @@
 
 我们的[微信小程序解决方案](https://console.qcloud.com/la)的初始架构如下图：业务和会话管理服务器都只有一台。
 
-![单机版架构图](https://mc.qcloudimg.com/static/img/822152039dca7161ad7217c1037066a8/19.png)
+![单机版架构图](https://mc.qcloudimg.com/static/img/7d40df0347cbfad83c16a011a435271c/24.png)
 
 通过外网、内网负载均衡绑定扩容的云服务器后，业务和会话管理服务器都可形成如下所示集群架构：
 
-![集群版架构图](https://mc.qcloudimg.com/static/img/143a3113449c6af1c52733613cbbc546/20.png)
+![集群版架构图](https://mc.qcloudimg.com/static/img/6031cecf849a1b43174244b3189dad0c/25.png)
 
 接下来我们具体来操作下`会话管理服务器`以及`业务服务器`横向扩容
 
@@ -63,7 +63,7 @@
 修改`sdk.config`中的`authServerUrl`字段值，
 
 ```
-"authServerUrl": "http://VIP:80/", //VIP上个步骤创建负载均衡实例的VIP，端口填负载均衡监听器监听的端口(示例中是80)
+"authServerUrl": "http://VIP/mina_auth/", //VIP上个步骤创建负载均衡实例的VIP
 ```
 
 重启服务来生效配置
