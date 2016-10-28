@@ -10,9 +10,9 @@
 
 ![小程序资源视图](https://mc.qcloudimg.com/static/img/95d83cc575c1aabc66cbdcaf63bc8619/18.png)
 
-然后前往[微信公众平台](https://mp.weixin.qq.com) -【选择设置】- 【开发者设置】选项卡，使用二级域名完成通信域名设置，设置完后可能要等待几分钟生效
+然后前往[微信公众平台](https://mp.weixin.qq.com) -【开发】-【基本配置】-【服务器配置】-【修改配置】,使用二级域名完成通信域名设置，设置完后可能需要稍等几分钟重启微信开发者工具生效。
 
-![微信域名配置](https://mc.qcloudimg.com/static/img/79cdbc773a6030b6055951d72e8735e3/16.png)
+![微信域名配置](https://imgcache.qq.com/open_proj/proj_qcloud_v2/wechat_mc/css/img/doc/1.jpg)
 
 - `request合法域名`：填腾讯云分配的二级域名
 - `socket合法域名`：填`ws.qcloud.com`
@@ -37,14 +37,14 @@ Windows Server系统修改`c://qcloud`下`sdk.config`文件
 }
 ```
 
-修改完成后，需要重启 IIS 中的网站以生效。
+修改完成后，需要重启 IIS 中的网站来生效。
 
 
 ## 3.下载微信小程序 Demo 和 SDK
 
-1) 前往[github](https://github.com/CFETeam/qcloud-weapp-client-demo)将 Demo 下载到本地
+1) 前往[github](https://github.com/tencentyun/qcloud-weapp-client-demo)将 Demo 下载到本地
 
-2) 修改 Demo 根目录下的`config.js`配置文件
+2) 修改 Demo 根目录下的 config.js 配置文件里主机配置
 
 ```
 var host = 'www.qcloud.la'; //host替换成微信小程序资源视图中分配的二级域名
@@ -68,7 +68,7 @@ module.exports = config;
 
 
 ## 4.升级方案
-如果现有的配置满足不了您的业务需求，我们提供了[单机版架构升级](https://github.com/CFETeam/weapp-doc/blob/master/medium_solution.md)、[集群版架构扩容](https://github.com/CFETeam/weapp-doc/blob/master/large_solution.md)来对现有资源进行配置升级、扩容。
+如果现有的配置满足不了您的业务需求，我们提供了[单机版架构升级](https://github.com/tencentyun/weapp-doc/blob/master/medium_solution.md)、[集群版架构扩容](https://github.com/tencentyun/weapp-doc/blob/master/large_solution.md)来对现有资源进行配置升级、扩容。
 
 
 ## 常见问题
@@ -114,3 +114,7 @@ module.exports = config;
 ### 创建资源时填的AppID和AppSecret在哪找到？
 
 前往[微信公众平台](https://mp.weixin.qq.com) -【选择设置】- 【开发者设置】在`开发者ID`一栏中可以看到
+
+### 一站式构建小程序分配的CVM/CDB密码哪里获取？
+
+分配的服务器及数据库资源的密码请在[站内信](https://console.qcloud.com/message)、手机短信、邮箱中可以获取到
