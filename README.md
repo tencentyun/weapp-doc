@@ -81,7 +81,29 @@ module.exports = config;
 
 1) 登录会话管理服务器，进入`/opt/lampp/htdocs/mina_auth/system/db/`目录，查看`db.ini`文件，文件中保存着 云数据库 CDB 的ip、port、username、passwd以及 dbname 等信息。
 
+1.1) 进入CDB配置文件目录
+
+     cd /opt/lampp/htdocs/mina_auth/system/db/
+     
+1.2) 查看服务器配置文件
+
+     vi db.ini
+
 2) 拿到这些信息以后，登录云数据库 CDB，修改 cAppinfo 表中的 AppId 和 secretKey 即可。
+
+2.1)进入安装mysql命令的目录
+
+    cd /opt/lampp/bin/
+    
+2.2)连接CDB
+
+    ./mysql -h #ip -P #port -u #username -p #passwd(其中#ip、#port、#username、#passwd是在1.2步骤中查看到的具体信息)
+    
+2.3)更新AppId 和 AppSecret
+
+    use cAuth;//选中数据库。
+    
+	update cAppinfo set appid = "your appid",secret = "your secret";//更新正确的AppId 和 AppSecret
 
 ### 创建资源时填的AppID和AppSecret在哪找到？
 
