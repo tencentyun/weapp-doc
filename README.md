@@ -83,6 +83,15 @@ module.exports = config;
 
 2) 拿到这些信息以后，登录云数据库 CDB，修改 cAppinfo 表中的 AppId 和 secretKey 即可。
 
+### 创建资源时填的AppID和AppSecret在哪找到？
+
+前往[微信公众平台](https://mp.weixin.qq.com) -【选择设置】- 【开发者设置】在`开发者ID`一栏中可以看到
+
+### 一站式构建小程序分配的CVM/CDB密码哪里获取？
+
+分配的服务器及数据库资源的密码请在[站内信](https://console.qcloud.com/message)、手机短信、邮箱中可以获取到
+
+
 ### 重装开发语言环境
 
 > 目前业务服务器提供了PHP、Node.js、Java、.NET版本的语言环境，用户如果要切换需要做以下操作:
@@ -111,10 +120,3 @@ module.exports = config;
 - .NET环境需要重启 IIS 中的网站来生效配置
 - Java环境重启tomcat执行命令`systemctl restart tomcat`
 
-### 创建资源时填的AppID和AppSecret在哪找到？
-
-前往[微信公众平台](https://mp.weixin.qq.com) -【选择设置】- 【开发者设置】在`开发者ID`一栏中可以看到
-
-### 一站式构建小程序分配的CVM/CDB密码哪里获取？
-
-分配的服务器及数据库资源的密码请在[站内信](https://console.qcloud.com/message)、手机短信、邮箱中可以获取到
