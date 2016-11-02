@@ -67,7 +67,7 @@
 ```
 
 重启服务来生效配置
-- Node.js环境，进入`/data/release/node-weapp-demo`下执行`pm2 process.json`
+- Node.js环境，进入`/data/release/node-weapp-demo`下执行`pm2 start process.json`
 - .Net环境 需要重启 IIS 中的网站来生效配置
 - JAVA环境 重启tomcat执行命令`systemctl restart tomcat`
 
