@@ -65,7 +65,7 @@ module.exports = config;
 
 >开发者工具下载地址：[windows 64](https://servicewechat.com/wxa-dev-logic/download_redirect?type=x64&from=mpwiki&t=1476434677599)、[windows 32](https://servicewechat.com/wxa-dev-logic/download_redirect?type=ia32&from=mpwiki&t=1476434677599)、[mac](https://servicewechat.com/wxa-dev-logic/download_redirect?type=darwin&from=mpwiki&t=1476434677599)
 
-![小程序Demo](https://mc.qcloudimg.com/static/img/05f7d737bc4dc74021aa5db49bf66aa0/17.png)
+![小程序Demo](https://imgcache.qq.com/open_proj/proj_qcloud_v2/wechat_mc/css/img/doc/3.jpg)
 
 
 ## 4.升级方案
