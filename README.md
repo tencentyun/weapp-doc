@@ -157,11 +157,11 @@ module.exports = config;
 
 ![image](https://cloud.githubusercontent.com/assets/12195370/20167547/37ad1042-a757-11e6-878d-54371a3be01e.png)
                                                
-					       图1 微信小程序资源视图
+					         图1 微信小程序资源视图
 					  
 ![image](https://cloud.githubusercontent.com/assets/12195370/20167593/6aa45b90-a757-11e6-8348-7d48e1e9b3f3.png)
 
-                                               图2 会话管理服务器IP地址
+                                                 图2 会话管理服务器IP地址
 					       
 2.2)使用拿到的IP信息，使用xshell或者其他工具登录至会话管理服务器，执行以下shell命令，完成升级。(注意：登录服务器的时候只能使用22端口)
 
