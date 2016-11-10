@@ -10,7 +10,9 @@
 
 现在两处bug已经修复，现在给出升级解决方案：
 
-2.1)腾讯云微信小程序资源视图页(https://console.qcloud.com/la)，查看会话管理服务器的IP信息。如图1所示。点击进去，查看IP信息，如图2所示。
+2.1)腾讯云微信小程序资源视图页(https://console.qcloud.com/la)
+
+查看会话管理服务器的IP信息。如图1所示。点击进去，查看IP信息，如图2所示。
 
 ![image](https://cloud.githubusercontent.com/assets/12195370/20167547/37ad1042-a757-11e6-878d-54371a3be01e.png)
                                                
