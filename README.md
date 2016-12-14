@@ -15,7 +15,7 @@
 ![微信域名配置](https://imgcache.qq.com/open_proj/proj_qcloud_v2/wechat_mc/css/img/doc/1.jpg)
 
 - `request合法域名`：填腾讯云分配的二级域名
-- `socket合法域名`：填`ws.qcloud.com`
+- `socket合法域名`：填腾讯云分配的 Socket 域名，如 `12345678.ws.qcloud.la`
 - `uploadFile合法域名`：填腾讯云分配的二级域名
 - `downloadFile合法域名`：填腾讯云分配的二级域名
 
