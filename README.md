@@ -108,7 +108,7 @@ module.exports = config;
 
 ### 创建资源时填的AppID和AppSecret在哪找到？
 
-前往[微信公众平台](https://mp.weixin.qq.com) -【选择设置】- 【开发者设置】在`开发者ID`一栏中可以看到
+要查看 AppID，请前往[微信公众平台](https://mp.weixin.qq.com) -【选择设置】- 开发者设置】在`开发者ID`一栏中可以看到。AppSecret 是小程序私有密钥，微信不再保存，无法查看，只能重置。
 
 ### 一站式构建小程序分配的CVM/CDB密码哪里获取？
 
