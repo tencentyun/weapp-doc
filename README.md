@@ -32,7 +32,7 @@ Windows Server系统修改`c://qcloud`下`sdk.config`文件
 {
     "serverHost": "xxxx.qcloud.la", //资源视图给出的二级域名
     "authServerUrl": "http://内网IP/mina_auth/", //内网IP改成会话管理服务器的内网IP
-    "tunnelServerUrl": "https://ws.qcloud.com", //不用修改
+    "tunnelServerUrl": "https://xxxx.ws.qcloud.la", //不用修改
     "tunnelSignatureKey": "62aaa14292b3a65a61c14b8c30437bc648e087b2", //填写一份随机字符
     "networkTimeout": "30000"
 }
